@@ -43,7 +43,7 @@ roscore
 Usage: 
 
 ```
-rosrun package_name node_name
+rosrun [package_name] [node_name]
 ```
 Example: 
 ```
@@ -63,7 +63,7 @@ rostopic list
 Usage: 
 
 ```
-rostopic info topic_name
+rostopic info [topic]
 ```
 Example: 
 ```
@@ -75,7 +75,7 @@ rostopic info /rosout
 Usage: 
 
 ```
-rosmsg info msg_type
+rosmsg info [msg]
 ```
 Example: 
 ```
