@@ -40,7 +40,7 @@ roscore
 
 ## 2. This command launches a node:
 
-Definition: 
+Usage: 
 
 ```
 rosrun package_name node_name
@@ -60,7 +60,7 @@ rostopic list
 
 ## 4. This command provides more information about a topic:
 
-Definition: 
+Usage: 
 
 ```
 rostopic info topic_name
@@ -72,7 +72,7 @@ rostopic info /rosout
 
 ## 5. This command provides more information about a message:
 
-Definition: 
+Usage: 
 
 ```
 rosmsg info msg_type
@@ -86,4 +86,34 @@ rosmsg info std_msgs/Bool
 
 ```
 rosrun rqt_graph rqt_graph
+```
+
+## 7. This command publishes data:
+
+Usage:
+
+```
+rostopic pub [topic] [msg_type] [args]
+```
+
+Use `-r` to publish every 2 seconds
+
+Example"
+
+```
+ rostopic pub -r 2 /testtopic std_msgs/String -- "Hello"
+```
+
+## 8. This command subscribes to a topic and echoes the data:
+
+Usage:
+
+```
+rostopic echo [topic]
+```
+
+Example"
+
+```
+ rostopic echo /testtopic
 ```
