@@ -82,13 +82,7 @@ Example:
 rosmsg info std_msgs/Bool
 ```
 
-## 6. This command visualizes your current ROS system:
-
-```
-rosrun rqt_graph rqt_graph
-```
-
-## 7. This command publishes data:
+## 6. This command publishes data:
 
 Usage:
 
@@ -104,7 +98,7 @@ Example"
  rostopic pub /testtopic std_msgs/String -- "Hello" -r 2
 ```
 
-## 8. This command subscribes to a topic and echoes the data:
+## 7. This command subscribes to a topic and echoes the data:
 
 Usage:
 
@@ -116,4 +110,10 @@ Example"
 
 ```
  rostopic echo /testtopic
+```
+
+## 8. This command visualizes your current ROS system:
+
+```
+rosrun rqt_graph rqt_graph
 ```
