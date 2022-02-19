@@ -117,3 +117,35 @@ Example"
 ```
 rosrun rqt_graph rqt_graph
 ```
+
+# Interactive Demo
+
+## Step 1:
+Open up a terminal window (on Windows 11 search for 'Ubuntu')
+
+## Step 2: Assigning enviornment variables (specific to this example)
+Type: `echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc && source ~/.bashrc`
+(This is to set up the enviornment variables for the robot to use in this example)
+
+## Step 3: Setting up terminal enviornment
+Open up 3 more terminal windows (you should now have 4 total)
+Arrange them so they take together take 1/4 of the screen (leaving 3/4 for other stuff)
+***If you have a small screen you can open up `gnome-terminal` and open multiple tabs with `File -> New Tab` instead of multiple windows
+
+## Step 4: Spawning in and driving a turtlebot
+Terminal Window 1: `roslaunch turtlebot3_gazebo turtlebot3_world.launch`
+Wait for gazebo to launch and resize it to fit in the top right corner of your screen
+
+Terminal Window 2: `roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch`
+try driving the robot around using the keyboard
+
+## Step 5: Visualizing Sensor Data
+Terminal Window 3: `roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch`
+
+## Step 6: SLAM (Simultaneous Localization and Mapping)
+#### Close the terminal window in Step 5 and in a new one type:
+`roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping`
+
+
+
+
