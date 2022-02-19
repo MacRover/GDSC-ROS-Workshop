@@ -101,7 +101,7 @@ Use `-r` to publish every 2 seconds
 Example"
 
 ```
- rostopic pub -r 2 /testtopic std_msgs/String -- "Hello"
+ rostopic pub /testtopic std_msgs/String -- "Hello" -r 2
 ```
 
 ## 8. This command subscribes to a topic and echoes the data:
