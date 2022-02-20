@@ -25,7 +25,7 @@ sudo apt-key add -` and press enter. Command should return OK.
 8. Type: `echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc && source ~/.bashrc`
 and press enter.
 
-For installing on a Linux computer (like a Raspberry Pi), open a terminal prompt, start at step 5, and follow the same instructions.
+For installing on a Linux computer, open a terminal prompt, start at step 5, and follow the same instructions. If you're using a Raspberry Pi, check out this guide: http://wiki.ros.org/ROSberryPi/Installing%20ROS%20Melodic%20on%20the%20Raspberry%20Pi
 
 # Demo 1
 
