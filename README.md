@@ -1,4 +1,10 @@
+# Workshop recording
+
+A complete recording of this workshop is available at this link: https://youtu.be/et_V55B4W8g
+
 # Pre-workshop installation
+
+Installation walk-through video available here: https://youtu.be/-_mZusYmJ8o
 
 1. Run command prompt or powershell as administrator.
 
